@@ -1,0 +1,65 @@
+E:\git\yanglei-xcx\xcx_kuaishou\pages\list\list.ksml
+:5:42 block 未知的标签属性： wx:key
+:5:58 block 未知的标签属性： wx:for-index
+:5:76 block 未知的标签属性： wx:for-item
+:30:5 scroll-view 未知的标签属性： refresher-enabled
+:31:5 scroll-view 未知的标签属性： refresher-threshold
+:32:5 scroll-view 未知的标签属性： refresher-default-style
+:33:5 scroll-view 未知的标签属性： refresher-background
+:34:5 scroll-view 未知的标签属性： refresher-triggered
+:35:5 scroll-view 未知的标签事件： bindrefresherpulling
+:36:5 scroll-view 未知的标签事件： bindrefresherrefresh
+:37:5 scroll-view 未知的标签事件： bindrefresherrestore
+:38:5 scroll-view 未知的标签事件： bindrefresherabort
+:43:39 block 未知的标签属性： wx:key
+:50:45 ad 不支持的标签属性： ad-intervals
+E:\git\yanglei-xcx\xcx_kuaishou\pages\home2\home.ksml
+:7:7 swiper 不支持的标签属性： current-item-id
+:16:39 block 未知的标签属性： wx:key
+:16:55 block 未知的标签属性： wx:for-item
+:22:46 ad 不支持的标签属性： ad-intervals
+:37:43 block 未知的标签属性： wx:key
+:37:59 block 未知的标签属性： wx:for-index
+:37:77 block 未知的标签属性： wx:for-item
+:58:80 view 未知的标签属性： wx:if
+:59:58 view 未知的标签属性： wx:if
+:62:89 image 未知的标签属性： show-menu-by-longpress
+:69:16 block 未知的标签属性： wx:for
+:69:37 block 未知的标签属性： wx:key
+:77:56 ad 不支持的标签属性： ad-intervals
+E:\git\yanglei-xcx\xcx_kuaishou\pages\homeInfo\homeInfo.ksml
+:9:76 view 未知的标签属性： wx:if
+:10:54 view 未知的标签属性： wx:if
+E:\git\yanglei-xcx\xcx_kuaishou\pages\home\home.ksml
+:7:7 swiper 不支持的标签属性： current-item-id
+:16:39 block 未知的标签属性： wx:key
+:16:55 block 未知的标签属性： wx:for-item
+:22:46 ad 不支持的标签属性： ad-intervals
+:37:43 block 未知的标签属性： wx:key
+:37:59 block 未知的标签属性： wx:for-index
+:37:77 block 未知的标签属性： wx:for-item
+:58:80 view 未知的标签属性： wx:if
+:59:58 view 未知的标签属性： wx:if
+:62:89 image 未知的标签属性： show-menu-by-longpress
+:69:16 block 未知的标签属性： wx:for
+:69:37 block 未知的标签属性： wx:key
+:77:56 ad 不支持的标签属性： ad-intervals
+E:\git\yanglei-xcx\xcx_kuaishou\pages\homeInfo2\homeInfo.ksml
+:9:76 view 未知的标签属性： wx:if
+:10:54 view 未知的标签属性： wx:if
+E:\git\yanglei-xcx\xcx_kuaishou\pages\index\index.ksml
+:5:7 未知的 tagName: span
+E:\git\yanglei-xcx\xcx_kuaishou\pages\info2\info.ksml
+:26:75 view 未知的标签属性： wx:key
+E:\git\yanglei-xcx\xcx_kuaishou\pages\info\info.ksml
+:26:75 view 未知的标签属性： wx:key
+:35:76 view 未知的标签属性： wx:if
+:36:54 view 未知的标签属性： wx:if
+E:\git\yanglei-xcx\xcx_kuaishou\pages\words\words.ksml
+:5:37 form 未知的标签属性： report-submit
+E:\git\yanglei-xcx\xcx_kuaishou\pages\logs\logs.ksml
+:14:48 view 未知的标签属性： wx:for
+E:\git\yanglei-xcx\xcx_kuaishou\app.js
+:44:14 不支持的 API: getUserProfile
+:65:12 不支持的 API: createInterstitialAd
+:66:27 不支持的 API: createInterstitialAd

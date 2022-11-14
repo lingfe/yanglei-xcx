@@ -257,7 +257,7 @@ Page({
 
   //赞赏
   onCopyNumber:function(){
-    tt.showToast({
+    ks.showToast({
       title: "感谢赞赏！",
       icon:"success",
       success: (res) => {

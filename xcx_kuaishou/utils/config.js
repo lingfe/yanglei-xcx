@@ -62,6 +62,7 @@ var 猫咪表情包={
     applicationTypeMenuGid:157,                   //应用菜单分类组合数据ID
     applicationName:"猫咪表情包",                  //应用名称
     applicationID:"ttded0a86d41ee423e01",         //应用ID
+    ksAppid:"ks648518347919359802",
     isAdUnitId:false,                             //是否开启广告
     adUnitId:"yrmaafmm12ex5k0zm2",                //视频广告ID，o14n1801omj6goh2e1
     adUnitIdInsertScreen:"umk4k136httyvzq5ir",    //插屏广告ID，hod4beoi5gp11g5fik
@@ -197,6 +198,7 @@ exports.励志壁纸 = 励志壁纸;
 exports.苹果动态壁纸 = 苹果动态壁纸;
 exports.元气桌面壁纸 = 元气桌面壁纸;
 exports.苹果手机壁纸 = 苹果手机壁纸;
+exports.thisApp = 猫咪表情包;
 
 
 var 苹果动态壁纸 =  {

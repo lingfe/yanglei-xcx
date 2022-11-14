@@ -1,5 +1,5 @@
 function setPageTitle(title){
-    tt.setNavigationBarTitle({
+    ks.setNavigationBarTitle({
         title: title,
         success: (res) => {
         },

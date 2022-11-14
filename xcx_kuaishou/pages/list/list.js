@@ -42,7 +42,7 @@ Page({
 
   //得到导航分类菜单
   getTypeListTabs:function(){
-    tt.request({
+    ks.request({
       url: app.globalData.domainName + "api/public/groupData/get",
       data:{gid:app.globalData.config.applicationTypeMenuGid},
       success: (res) => {
@@ -64,15 +64,15 @@ Page({
       sattDir:e.target.dataset.path,
       name:e.target.dataset.name
     };
-    tt.setStorageSync("typeName", that.data.typeName);
-    tt.setStorageSync("infoData", infoData);
-    tt.setStorageSync("pidStr", that.data.pidStr);
+    ks.setStorageSync("typeName", that.data.typeName);
+    ks.setStorageSync("infoData", infoData);
+    ks.setStorageSync("pidStr", that.data.pidStr);
     if( that.data.classType == 4 ){
-      tt.navigateTo({
+      ks.navigateTo({
         url: "/pages/homeInfo2/homeInfo",
       });
     }else{
-      tt.navigateTo({
+      ks.navigateTo({
         url: "/pages/info2/info",
       });
     }
@@ -80,7 +80,7 @@ Page({
 
   //得到分类列表
   getTypeImgList(that){
-    tt.request({
+    ks.request({
       url: app.globalData.domainName + "api/public/groupData/get",
       data:{gid:that.data.gid},
       success: (res) => {
@@ -126,10 +126,10 @@ Page({
   getImgList(pidStr){
     var that=this;
     var flag=true;
-    tt.request({
+    ks.request({
       url: app.globalData.domainName + 'api/public/qrcode/imgList',
       data:{
-        pidStr:pidStr,
+        pidStr:pidStr.join(),
         limit:that.data.pageSize,
         page:that.data.page
       },
@@ -162,7 +162,7 @@ Page({
     page++;
 
     // 查询所有数据
-    tt.request({
+    ks.request({
       url: app.globalData.domainName + 'api/public/qrcode/imgList',
       data:{
         pidStr:that.data.pidStr,

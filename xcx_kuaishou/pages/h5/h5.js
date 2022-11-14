@@ -4,6 +4,6 @@ Page({
     h5url:"",
   },
   onLoad: function (options) {
-    this.setData({h5url:tt.getStorageSync("h5url")});
+    this.setData({h5url:ks.getStorageSync("h5url")});
   }
 })

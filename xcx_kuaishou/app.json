@@ -24,6 +24,24 @@
     "color": "#C4C4C4",
     "selectedColor": "#5E7E88",
     "backgroundColor": "#ffffff",
-    "list": []
+    "custom":"true",
+    "list": [{
+        "pagePath": "pages/home/home",
+        "iconPath": "images/tabbar/index.png",
+        "selectedIconPath": "images/tabbar/index.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/tuijian.png",
+        "selectedIconPath": "images/tabbar/tuijian.png",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/tabbar/logs.png",
+        "selectedIconPath": "images/tabbar/logs.png",
+        "text": "更新日志"
+      }]
   }
 }

@@ -1,8 +1,8 @@
   <view class="card_wrap">
     <view bindtouchend="slidethis" animation="{{id === 0 ? animationData : ''}}" 
-      class="card_item card{{ (id + 1)>=3?3:(id+1) }} " tt:for="{{ cardInfoList }}"  tt:key="unique" tt:for-index="id" tt:for-item="item">
+      class="card_item card{{ (id + 1)>=3?3:(id+1) }} " ks:for="{{ cardInfoList }}"  ks:key="unique" ks:for-index="id" ks:for-item="item">
       <!-- 滑动箭头 -->
-      <span class="change_icon" bindtap="slidethis"  tt:if="{{ id === 0 }}">
+      <span class="change_icon" bindtap="slidethis"  ks:if="{{ id === 0 }}">
         <image src="https://img2.baidu.com/it/u=3615540704,2089905896&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
       </span>
 

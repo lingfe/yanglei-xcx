@@ -1,6 +1,6 @@
 /**app.wxss**/
-@import "acctess/main.ttss";
-@import "acctess/icon.ttss";
+@import "acctess/main.css";
+@import "acctess/icon.css";
 
 /** 下载弹窗 */
 .dom-quxiao{

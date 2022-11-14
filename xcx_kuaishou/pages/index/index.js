@@ -30,10 +30,10 @@ Page({
   getImgList(){
     var that=this;
     var flag=true;
-    tt.request({
+    ks.request({
       url: app.globalData.domainName + 'api/public/qrcode/imgList',
       data:{
-        pidStr: tt.getStorageSync("pidStr"),
+        pidStr: ks.getStorageSync("pidStr"),
         limit:that.data.pageSize,
         page:that.data.page
       },
@@ -59,7 +59,7 @@ Page({
 
   //下载
   btnDownload:function(e){
-    tt.showToast({
+    ks.showToast({
       title: '正在处理..',
       icon: 'loading',
     })
@@ -69,7 +69,7 @@ Page({
     if(indexof!=-1){
       app.btnDownload(url);
     }else{
-      tt.request({
+      ks.request({
         url: app.globalData.domainName + '/api/public/qrcode/imgUrlSaveFiles',
         data:{
           folder:app.globalData.config.applicationID,
@@ -80,14 +80,14 @@ Page({
           console.log(res1);
           var data=res1.data.data;
           if(data == null ){
-            tt.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
+            ks.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
           }else{
             var url999=data[0].url;
             app.btnDownload(url999);
           }
         },
         fail: (res) => {
-          tt.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
+          ks.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
         },
       });
     }

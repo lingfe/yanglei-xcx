@@ -9,12 +9,12 @@ Page({
   onLoad: function (options) {
     var that=this;
     console.log(options)
-    const res = tt.getSystemInfoSync();
+    const res = ks.getSystemInfoSync();
     var windowHeight=res.screenHeight;
     console.log(windowHeight)
     that.setData({
       windowHeight:windowHeight,
-      infoData:tt.getStorageSync("infoData")
+      infoData:ks.getStorageSync("infoData")
     });
     
     //插屏广告
@@ -41,12 +41,12 @@ Page({
 
   //返回
   btnReturn:function(){
-    tt.navigateBack();
+    ks.navigateBack();
   },
 
   //开启弹窗
   showTip:function (e) {
-    tt.showModal({
+    ks.showModal({
       title:"温馨提示",
       content:"观看完整视频后即可下载",
       success: (res) => {
@@ -68,7 +68,7 @@ Page({
 
   //下载
   btnDownload:function(e){
-    tt.showToast({
+    ks.showToast({
       title: '正在处理..',
       icon: 'loading',
     })
@@ -80,7 +80,7 @@ Page({
     if(indexof!=-1){
       app.btnDownload(url);
     }else{
-      tt.request({
+      ks.request({
         url: app.globalData.domainName + '/api/public/qrcode/imgUrlSaveFiles',
         data:{
           folder:app.globalData.config.applicationID,
@@ -91,14 +91,14 @@ Page({
           console.log(res1);
           var data=res1.data.data;
           if(data == null ){
-            tt.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
+            ks.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
           }else{
             var url999=data[0].url;
             app.btnDownload(url999);
           }
         },
         fail: (res) => {
-          tt.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
+          ks.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
         },
       });
     }

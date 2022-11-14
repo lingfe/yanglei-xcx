@@ -39,7 +39,7 @@ Page({
     that.datetimeKozhi();
     that.getLbt();
     that.getTypeList();
-    tt.setNavigationBarTitle({title: app.globalData.config.applicationName});
+    ks.setNavigationBarTitle({title: app.globalData.config.applicationName});
   },
 
   //banner广告
@@ -67,7 +67,7 @@ Page({
 
   //得到分类菜单
   getTypeList:function(){
-    tt.request({
+    ks.request({
       url: app.globalData.domainName + "api/public/groupData/get",
       data:{gid:app.globalData.config.applicationTypeMenuGid},
       success: (res) => {
@@ -80,7 +80,7 @@ Page({
         });
 
         //得到数据
-        tt.setStorageSync("pidStr",that.data.pid);
+        ks.setStorageSync("pidStr",that.data.pid);
         that.getImgList();
       },
       fail: (res) => {
@@ -107,7 +107,7 @@ Page({
     || keywords==="日志"
     || keywords==="查看日志"
     || keywords==="查看logs"){
-      tt.navigateTo({
+      ks.navigateTo({
         url: "/pages/logs/logs",
       });
     }
@@ -122,7 +122,7 @@ Page({
     page ++;
 
     // 查询所有数据
-    tt.request({
+    ks.request({
       url: app.globalData.domainName + 'api/public/qrcode/imgList',
       data:{
         pidStr:that.data.pidStr,
@@ -165,7 +165,7 @@ Page({
       data.pidStr=pidStr;
     }
 
-    tt.request({
+    ks.request({
       url: app.globalData.domainName + 'api/public/qrcode/imgList',
       data:data,
       success: (res) => {
@@ -190,7 +190,7 @@ Page({
 
   //轮播图
   getLbt:function(){
-    tt.request({
+    ks.request({
       url: app.globalData.domainName + "api/public/groupData/get",
       data:{gid:app.globalData.config.homeLbtGid},
       success: (res) => {
@@ -213,7 +213,7 @@ Page({
 
   //长按3秒播放广告后执行保存
   changanSaveFils:function(e){
-    const videoAd = tt.createRewardedVideoAd({
+    const videoAd = ks.createRewardedVideoAd({
       adUnitId:app.globalData.config.adUnitId,
     });
     videoAd.show().then(() => {
@@ -221,7 +221,7 @@ Page({
     });
     videoAd.onError((err) => {
       console.log('加载异常', err)
-      tt.showModal({ title:"重要提示",content: "广告调用失败！直接给予奖励！" });
+      ks.showModal({ title:"重要提示",content: "广告调用失败！直接给予奖励！" });
       this.baocunImg(e);
     });
     videoAd.onClose((res) => {
@@ -229,18 +229,18 @@ Page({
       if(res.count > 0){
         this.baocunImg(e);
       }else{
-        tt.showModal({ title:"重要提示",content: "没有看完广告无法获得奖励！" });
+        ks.showModal({ title:"重要提示",content: "没有看完广告无法获得奖励！" });
       }
     });
   },
 
   //保存图片
   baocunImg:function(e){ 
-    tt.downloadFile({
+    ks.downloadFile({
       url: e.target.dataset.path,
       success: (res) => {
         console.log(res);
-        tt.saveImageToPhotosAlbum({
+        ks.saveImageToPhotosAlbum({
           filePath: res.tempFilePath,
           success: (res) => {
             console.log(res);
@@ -249,11 +249,11 @@ Page({
             console.log(res);
           },
         });
-        tt.showToast({ title: "保存成功！" });
+        ks.showToast({ title: "保存成功！" });
       },
       fail: (res) => {
         console.log(res);
-        tt.showToast({ title: "保存失败！"});
+        ks.showToast({ title: "保存失败！"});
       },
     });
   },
@@ -274,16 +274,16 @@ Page({
       sattDir:e.currentTarget.dataset.path,
       name:e.currentTarget.dataset.name
     };
-    tt.setStorageSync("infoData", infoData);
-    tt.setStorageSync("pidStr", that.data.pid);
+    ks.setStorageSync("infoData", infoData);
+    ks.setStorageSync("pidStr", that.data.pid);
 
     //验证
     if(that.data.classType == 4){
-      tt.navigateTo({
+      ks.navigateTo({
         url: "/pages/homeInfo2/homeInfo",
       });
     }else{
-      tt.navigateTo({
+      ks.navigateTo({
         url: "/pages/info2/info",
       });
     }
@@ -324,12 +324,12 @@ Page({
     var url = e.target.id;
     var name = e.currentTarget.dataset.name;
     if(name.indexOf("http") !=-1){
-      tt.setStorageSync("h5url", name);
-      tt.navigateTo({
+      ks.setStorageSync("h5url", name);
+      ks.navigateTo({
         url: "/pages/h5/h5",
       });
     }else{
-      tt.previewImage({
+      ks.previewImage({
         urls: [url],
       });
     }

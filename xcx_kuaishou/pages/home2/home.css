@@ -1,7 +1,7 @@
-/* d:\lingfe\xcx\bzhiDome\pages\home\home.ttss */
+/* d:\lingfe\xcx\bzhiDome\pages\home\home.css */
 
-@import "/app.ttss";
-@import "/pages/list/list.ttss";
+@import "/app.css";
+@import "/pages/list/list.css";
 
 .index-banner{
 	width: 100%;

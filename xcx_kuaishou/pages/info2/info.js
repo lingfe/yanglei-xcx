@@ -13,8 +13,8 @@ Page({
   onLoad: function (options) {
     var that=this;
     that.setData({
-      typeName:tt.getStorageSync("typeName"),
-      infoData:tt.getStorageSync("infoData")
+      typeName:ks.getStorageSync("typeName"),
+      infoData:ks.getStorageSync("infoData")
     });
     this.getImgList();
 
@@ -26,15 +26,15 @@ Page({
   checkeImg:function(e){
     var that=this;
     that.setData({infoData:that.data.results[e.target.id]});
-    tt.setStorageSync("infoData", that.data.infoData);
-    tt.showToast({ title:"已选择",icon:"none",duration:800,success:function(res){
-      tt.redirectTo({url:"/pages/info/info",});
+    ks.setStorageSync("infoData", that.data.infoData);
+    ks.showToast({ title:"已选择",icon:"none",duration:800,success:function(res){
+      ks.redirectTo({url:"/pages/info/info",});
     }});
   },
 
   //开启弹窗
   showTip:function (e) {
-    tt.showModal({
+    ks.showModal({
       title:"温馨提示",
       content:"观看完整视频后即可下载",
       success: (res) => {
@@ -50,7 +50,7 @@ Page({
 
   //隐藏弹窗
   preventHide:function(e){
-    tt.showModal({
+    ks.showModal({
       title:"温馨提示",
       content:"观看完整视频后即可下载",
       success: (res) => {
@@ -75,7 +75,7 @@ Page({
     if(indexof !=-1){
       app.btnDownload(url);
     }else{
-      tt.request({
+      ks.request({
         url: app.globalData.domainName + '/api/public/qrcode/imgUrlSaveFiles',
         data:{
           folder:app.globalData.config.applicationID,
@@ -86,19 +86,19 @@ Page({
           console.log(res1);
           var data=res1.data.data;
           if(data == null ){
-            tt.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
+            ks.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
           }else{
             var url999=data[0].url;
             app.btnDownload(url999);
           }
         },
         fail: (res) => {
-          tt.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
+          ks.showToast({ title: "请稍后重试!",icon:"fail",duration:2000});
         },
       });
     }
 
-    tt.showToast({
+    ks.showToast({
       title: '正在处理..',
       icon: 'loading',
     })
@@ -112,17 +112,17 @@ Page({
   //预览
   btnPreview:function(){
     var that=this;
-    tt.navigateBack();
+    ks.navigateBack();
   },
 
   //得到图片列表
   getImgList(pidStr){
     var that=this;
     var flag=true;
-    tt.request({
+    ks.request({
       url: app.globalData.domainName + 'api/public/qrcode/imgList',
       data:{
-        pidStr: tt.getStorageSync("pidStr"),
+        pidStr: ks.getStorageSync("pidStr"),
         limit:that.data.pageSize,
         page:that.data.page
       },

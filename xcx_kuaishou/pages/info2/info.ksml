@@ -23,11 +23,11 @@
     <!-- 列表 -->
     <view class="bg-white padding" style="padding-top: 0px;">
         <view class="grid col-3 grid-square">
-            <view bindtap="checkeImg" class="bg-img" tt:for="{{results}}" wx:key="test" id="{{index}}"
+            <view bindtap="checkeImg" class="bg-img" ks:for="{{results}}" wx:key="test" id="{{index}}"
             style="background-image:url({{item.sattDir}});{{classType == 4?'height:180px;':''}}"></view>
         </view>
-        <view tt:if="{{results == null|| results.length  == 0}}" style="width: 100%;text-align: center;" >--暂无内容--</view>
-        <view tt:else style="padding: 0px;" class='cu-tabbar-height footer_more'>-- 加载完毕 --</view>
+        <view ks:if="{{results == null|| results.length  == 0}}" style="width: 100%;text-align: center;" >--暂无内容--</view>
+        <view ks:else style="padding: 0px;" class='cu-tabbar-height footer_more'>-- 加载完毕 --</view>
     </view>
 </view>
 
