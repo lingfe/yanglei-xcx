@@ -161,9 +161,9 @@ App({
     datetime:null,
     datetime2:null,
     userInfo: null,
-    //domainName:"https://600bq.com/",//服务器-杨磊
+    domainName:"https://600bq.com/",//服务器-杨磊
     //domainName:"https://gz9188.com/", //服务器-罗
-    domainName:"https://adminjcx.gzsskj.cn/", //服务器-九秒中
+    //domainName:"https://adminjcx.gzsskj.cn/", //服务器-九秒中
     //domainName:"http://localhost:8080/",//本地
   }
 })

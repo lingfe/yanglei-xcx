@@ -2,15 +2,12 @@
   "pages":[
     "pages/home/home",
     "pages/homeInfo/homeInfo",
-    "pages/homeInfo2/homeInfo",
     "pages/index/index",
     "pages/logs/logs",
     "pages/notice/notice",
     "pages/words/words",
     "pages/list/list",
-    "pages/info/info",
-    "pages/info2/info",
-    "pages/h5/h5"
+    "pages/info/info"
   ],
   "window":{
     "navigationBarTitleText": "",

@@ -46,8 +46,17 @@ Page({
 
   //开启弹窗
   showTip:function (e) {
-    this.setData({
-      showModal:true
+    ks.showModal({
+      title:"温馨提示",
+      content:"观看完整视频后即可下载",
+      success: (res) => {
+        if(res.confirm){
+          this.btnDownload();
+        }
+      },
+      fail: (res) => {
+        
+      },
     });
   },
 

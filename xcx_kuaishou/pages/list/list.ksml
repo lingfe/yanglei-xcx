@@ -43,13 +43,16 @@
           <block ks:for="{{results}}" wx:key="test" >
             <!-- banner广告 -->
             <view ks:if="{{isAdUnitId == true && index === random}}"
-            bindtap="btnInfo" class="bg-img" 
+            bindtap="btnInfo" 
+            class="bg-img" 
             id="{{item.pid}}" 
             data-name="{{item.name}}" 
             data-path="{{item.sattDir}}" style="background-image:url({{item.sattDir}});{{classType == 4?'height:190px;':''}}" >
               <ad unit-id="{{adUnitIdBig}}" type="1231" ad-intervals="30"></ad>
             </view>
-            <view ks:else class="bg-img" bindtap="btnInfo" 
+            <view ks:else
+            class="bg-img" 
+            bindtap="btnInfo" 
             id="{{item.pid}}" 
             data-name="{{item.name}}" 
             data-path="{{item.sattDir}}" 

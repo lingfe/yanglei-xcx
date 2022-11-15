@@ -34,14 +34,35 @@ Page({
 
   //开启弹窗
   showTip:function (e) {
-    this.setData({
-      showModal:true
+    ks.showModal({
+      title:"温馨提示",
+      content:"观看完整视频后即可下载",
+      success: (res) => {
+        if(res.confirm){
+          this.btnDownload();
+        }
+      },
+      fail: (res) => {
+        
+      },
     });
   },
 
   //隐藏弹窗
   preventHide:function(e){
-    this.setData({showModal:false});
+    ks.showModal({
+      title:"温馨提示",
+      content:"观看完整视频后即可下载",
+      success: (res) => {
+        if(res.confirm){
+          this.btnDownload();
+        }
+      },
+      fail: (res) => {
+        
+      },
+    });
+    //this.setData({showModal:false});
     //tt.showToast({ title: "求支持!",icon:"fail",duration:2000});
   },
 

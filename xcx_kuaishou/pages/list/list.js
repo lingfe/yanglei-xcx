@@ -69,11 +69,11 @@ Page({
     ks.setStorageSync("pidStr", that.data.pidStr);
     if( that.data.classType == 4 ){
       ks.navigateTo({
-        url: "/pages/homeInfo2/homeInfo",
+        url: "/pages/homeInfo/homeInfo",
       });
     }else{
       ks.navigateTo({
-        url: "/pages/info2/info",
+        url: "/pages/info/info",
       });
     }
   },
@@ -129,7 +129,7 @@ Page({
     ks.request({
       url: app.globalData.domainName + 'api/public/qrcode/imgList',
       data:{
-        pidStr:pidStr.join(),
+        pidStr:pidStr.toString(),
         limit:that.data.pageSize,
         page:that.data.page
       },
