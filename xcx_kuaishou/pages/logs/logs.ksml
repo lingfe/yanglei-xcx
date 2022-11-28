@@ -34,7 +34,8 @@
       </view>
     </view>
   </view>
-  
-<!-- 操作 -->
+
+<!-- 操作 
 <navigator class='btn_3d btn_to up'  url="/pages/notice/notice">公告</navigator>
 <navigator class='btn_3d btn_to del' url="/pages/words/words">留言</navigator>
+-->

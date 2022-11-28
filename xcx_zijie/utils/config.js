@@ -197,7 +197,7 @@ exports.苹果动态壁纸 = 苹果动态壁纸;
 exports.元气桌面壁纸 = 元气桌面壁纸;
 exports.苹果手机壁纸 = 苹果手机壁纸;
 
-exports.configThis = 亲子头像;
+exports.configThis = 万象壁纸;
 
 
 var 苹果动态壁纸 =  {

@@ -76,7 +76,7 @@
     </view>
 
     <!-- 图片列表 -->
-    <view class="bg-white padding" style="padding-top: 0px;padding-bottom: 54px;">
+    <view class="bg-white padding" style="padding-top: 0px;padding-bottom: 0px;">
       <view class="grid col-3 grid-square">
         <block wx:for="{{imgList}}" wx:key="test" >
           <!-- 信息流大图广告 -->

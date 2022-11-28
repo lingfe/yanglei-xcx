@@ -133,9 +133,14 @@ App({
         })
         .catch((err) => {
           console.log("广告组件出现问题", err);
-          ks.showToast({ title:"检测到特殊用户!直接给予奖励！",icon:"none",duration:3000,success:function(res){
-            that.baocunImg(url); //保存图片
-          }});
+          ks.showToast({ 
+            title:"检测到特殊用户!直接给予奖励！",
+            icon:"none",
+            duration:3000,
+            success:function(res){
+              that.baocunImg(url); //保存图片
+            }
+          });
           // 可以手动加载一次
           videoAd.load().then(() => {
             console.log("手动加载成功");
@@ -155,7 +160,8 @@ App({
     adNum:0,
     config:config.thisApp,
     videoAd:ks.createRewardedVideoAd({
-      adUnitId: config.thisApp.ksAppid,
+        type: 100011056,
+        unitId: config.thisApp.adUnitId,
     }),
 
     datetime:null,
