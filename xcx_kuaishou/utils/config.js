@@ -6,7 +6,7 @@ var 猫咪表情包={
     homeLbtGid:158,                               //首页轮播图组合数据ID
     applicationTypeMenuGid:157,                   //应用菜单分类组合数据ID
     applicationName:"猫咪表情包",                  //应用名称
-    ksAppid:"ks648518347919359802",
+    applicationID:"ks648518347919359802",
     isAdUnitId:false,                             //是否开启广告
     adUnitId:"100020315",                //视频广告ID，o14n1801omj6goh2e1
     adUnitIdInsertScreen:"umk4k136httyvzq5ir",    //插屏广告ID，hod4beoi5gp11g5fik
@@ -20,7 +20,7 @@ var 黄夏温表情包={
     homeLbtGid:146,                               //首页轮播图组合数据ID
     applicationTypeMenuGid:145,                   //应用菜单分类组合数据ID
     applicationName:"黄夏温表情包",                //应用名称
-    ksAppid:"ks700591219043802011",
+    applicationID:"ks700591219043802011",
     isAdUnitId:false,                             //是否开启广告
     adUnitId:"akfblevlmffnqcnpdx",                //视频广告ID，o14n1801omj6goh2e1
     adUnitIdInsertScreen:"rua80pqzsjeugkjdug",    //插屏广告ID，hod4beoi5gp11g5fik
@@ -34,7 +34,7 @@ var 元气桌面壁纸 = {
     homeLbtGid:216,                               //首页轮播图组合数据ID
     applicationTypeMenuGid:215,                   //应用菜单分类组合数据ID
     applicationName:"元气桌面壁纸",                //应用名称
-    ksAppid:"ks699183844510477908",
+    applicationID:"ks699183844510477908",
     isAdUnitId:false,                             //是否开启广告
     adUnitId:"100020330",                //视频广告ID，o14n1801omj6goh2e1
     adUnitIdInsertScreen:"fdci4oa70jdjkljrql",    //插屏广告ID，hod4beoi5gp11g5fik
@@ -48,7 +48,7 @@ var 苹果壁纸 =  {
     homeLbtGid:216,                                //首页轮播图组合数据ID
     applicationTypeMenuGid:215,                   //应用菜单分类组合数据ID
     applicationName:"苹果壁纸",                //应用名称
-    ksAppid:"ks702561543718168117",
+    applicationID:"ks702561543718168117",
     isAdUnitId:false,                             //是否开启广告
     adUnitId:"11380ne995k8hhlaa3",                //视频广告ID，o14n1801omj6goh2e1
     adUnitIdInsertScreen:"1g83d9jei6g72wspg6",    //插屏广告ID，hod4beoi5gp11g5fik

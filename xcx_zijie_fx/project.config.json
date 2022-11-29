@@ -1,0 +1,75 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"newFeature": false,
+		"postcss": false,
+		"autoCompile": true,
+		"mockUpdate": false,
+		"minified": false,
+		"autoPush": false,
+		"scripts": false,
+		"mockLogin": false,
+		"localPlugins": false,
+		"IDEPreviewHotRestartCache": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.5",
+	"appid": "ttee1398ae712d721c01",
+	"projectname": "git-yuanc",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1644221029118,
+			"list": [{
+				"id": 1644221029118,
+				"name": "主页",
+				"pathName": "pages/home/home",
+				"query": "",
+				"scene": "990001",
+				"launchFrom": "scan",
+				"location": "qr_code"
+			}, {
+				"id": 1646721985548,
+				"name": "pages/info/info",
+				"pathName": "pages/info/info",
+				"query": "",
+				"scene": "",
+				"launchFrom": "",
+				"location": ""
+			}, {
+				"id": 1646710338953,
+				"name": "homeInfo",
+				"pathName": "pages/homeInfo/homeInfo",
+				"query": "",
+				"scene": "990001",
+				"launchFrom": "scan",
+				"location": "qr_code"
+			}, {
+				"id": 1655111227803,
+				"name": "分类",
+				"pathName": "pages/index/index",
+				"query": "",
+				"scene": "990001",
+				"launchFrom": "scan",
+				"location": "qr_code"
+			}]
+		}
+	}
+}
