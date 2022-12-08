@@ -7,6 +7,7 @@
     "pages/notice/notice",
     "pages/words/words",
     "pages/list/list",
+    "pages/zaixinzImg/zaixinzImg",
     "pages/info/info"
   ],
   "window":{
@@ -33,12 +34,6 @@
         "iconPath": "images/tabbar/tuijian.png",
         "selectedIconPath": "images/tabbar/tuijian.png",
         "text": "推荐"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "iconPath": "images/tabbar/logs.png",
-        "selectedIconPath": "images/tabbar/logs.png",
-        "text": "更新日志"
       }]
   }
 }

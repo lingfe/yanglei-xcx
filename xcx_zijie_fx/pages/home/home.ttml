@@ -32,14 +32,15 @@
       </swiper>
     </view>
 
-    <!-- 分类 -->
-    <view class='header flex-tab flex-wrp' style="padding: 6px;">
-      <block tt:for="{{ cardInfoList }}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
+    <!-- 创作者 -->
+    <view class='header flex-tab flex-wrp' style="padding: 6px;height: 66px;">
+      <block tt:for="{{ userList }}"  wx:key="unique" wx:for-index="id" wx:for-item="item">
         <block tt:if="{{id == 0}}"></block>
         <block tt:else>
-          <navigator url="../list/list?classtype={{item.YQZMBZclass}}&pid={{item.YQZMBZindexTypeID}}&gid={{item.YQZMBZindexGID}}&title={{item.YQZMBZindexTypeName}}" class='flex-item'>
-            <image bindtap="btnTypeImg" src='{{item.YQZMBZindexBgImg}}'/>
-            <view bindtap="btnTypeImg">{{item.YQZMBZindexTypeName}}</view>
+          <navigator url="../list/list?" class='flex-item'>
+            <image style="height: 40px;width:40px;"
+             bindtap="btnTypeImg" src='{{item.avatar}}'/>
+            <view style="font-size: 16px;"  bindtap="btnTypeImg">{{item.realName}}</view>
           </navigator>
         </block>
       </block>
@@ -52,15 +53,6 @@
         <input style="font-size: 12px;font-weight: bold;" bindinput="valuechange" type="text" placeholder="{{placeholderSearch}}" confirm-type="search"></input>
         <button bindtap="search" style="width:10vh;font-size: 12px;" class="cu-btn round bg-blue shadow">搜索</button>
       </view>
-    </view>
-
-    <!-- 弹出层 -->
-    <view class="mask" catchtouchmove="preventTouchMove" bindtap="preventHide" wx:if="{{showModal}}"></view>
-    <view class="modalDlg" style="top:14vh;height: 64%;" wx:if="{{showModal}}">
-      <!-- 二维码或其他图片 -->
-      <text bindtap="preventHide" style="position:absolute;top:5px;right:5px;z-index:9999999" class="cuIcon-close text-black"></text>
-      <image mode="widthFix" data-path="{{showIngImg}}" bindlongpress="changanSaveFils" show-menu-by-longpress="true" src="{{showIngImg}}" />
-      <view class="text">长按3秒播放广告后保存</view>
     </view>
 
     <!-- 图片列表 -->

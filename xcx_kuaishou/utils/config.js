@@ -3,8 +3,8 @@
 var 猫咪表情包={
     type:"表情包",                                 //表示该应用分类主题
     placeholderSearch:"输入log、名称等",           //首页搜索框默认值
-    homeLbtGid:158,                               //首页轮播图组合数据ID
-    applicationTypeMenuGid:157,                   //应用菜单分类组合数据ID
+    homeLbtGid:222,                               //首页轮播图组合数据ID
+    applicationTypeMenuGid:221,                   //应用菜单分类组合数据ID
     applicationName:"猫咪表情包",                  //应用名称
     applicationID:"ks648518347919359802",
     isAdUnitId:false,                             //是否开启广告
@@ -17,8 +17,8 @@ var 猫咪表情包={
 var 黄夏温表情包={
     type:"表情包",                                 //表示该应用分类主题
     placeholderSearch:"输入log、名称等",           //首页搜索框默认值
-    homeLbtGid:146,                               //首页轮播图组合数据ID
-    applicationTypeMenuGid:145,                   //应用菜单分类组合数据ID
+    homeLbtGid:227,                               //首页轮播图组合数据ID
+    applicationTypeMenuGid:226,                   //应用菜单分类组合数据ID
     applicationName:"黄夏温表情包",                //应用名称
     applicationID:"ks700591219043802011",
     isAdUnitId:false,                             //是否开启广告
@@ -45,8 +45,8 @@ var 元气桌面壁纸 = {
 var 苹果壁纸 =  {
     type:"壁纸",                                   //表示该应用分类主题
     placeholderSearch:"输入log、名称等",           //首页搜索框默认值
-    homeLbtGid:216,                                //首页轮播图组合数据ID
-    applicationTypeMenuGid:215,                   //应用菜单分类组合数据ID
+    homeLbtGid:234,                                //首页轮播图组合数据ID
+    applicationTypeMenuGid:233,                   //应用菜单分类组合数据ID
     applicationName:"苹果壁纸",                //应用名称
     applicationID:"ks702561543718168117",
     isAdUnitId:false,                             //是否开启广告
@@ -60,7 +60,7 @@ exports.猫咪表情包 = 猫咪表情包;
 exports.黄夏温表情包 = 黄夏温表情包;
 exports.苹果壁纸 = 苹果壁纸;
 exports.元气桌面壁纸 = 元气桌面壁纸;
-exports.thisApp = 猫咪表情包;
+exports.thisApp = 元气桌面壁纸;
 
 //菜单
 var item=[

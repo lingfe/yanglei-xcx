@@ -160,10 +160,10 @@ App({
 
     datetime:null,
     datetime2:null,
-    domainName:"https://600bq.com/", //服务器-
+    //domainName:"https://600bq.com/", //服务器-
     //domainName:"https://gz9188.com/", //服务器
     //domainName:"https://adminjcx.gzsskj.cn/", //服务器-
-    //domainName:"http://192.168.0.27:8080/",//本地
+    domainName:"http://localhost:8080/",//本地
     userInfo: null
   }
 })

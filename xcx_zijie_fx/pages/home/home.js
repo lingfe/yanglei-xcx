@@ -38,8 +38,33 @@ Page({
       adUnitIdBig:app.globalData.config.adUnitIdBig,
     });
     that.datetimeKozhi();
-    that.getLbt();
+    that.getIndexData();
+    that.getTypeList();
     tt.setNavigationBarTitle({title: app.globalData.config.applicationName});
+  },
+
+  //得到-首页数据
+  getIndexData:function(){
+    tt.request({
+      url:app.globalData.domainName + "api/front/creator/index/indexData",
+      data:{
+        gidIndexLbt:app.globalData.config.homeLbtGid,
+        typeId:0
+      },
+      success: (res) =>{
+        var that=this;
+        var data = res.data.data;
+        var bannerList = data.bannerList;
+        var userList = data.userList;
+        var imgList = data.systemAttachmentList;
+        that.setData({
+          imgList:imgList,
+          lbtList:bannerList,
+          userList:userList,
+        });
+      },
+      fail: (res) => {},
+    });
   },
 
   //banner广告
@@ -65,12 +90,6 @@ Page({
     console.log(date2);
   },
 
-  // if(data==undefined ||data==null||data.length<=1){
-  //   tt.navigateTo({
-  //     url: "/pages/zaixinzImg/zaixinzImg",
-  //   });
-  //   return;
-  // }
   //得到分类菜单
   getTypeList:function(){
     tt.request({
