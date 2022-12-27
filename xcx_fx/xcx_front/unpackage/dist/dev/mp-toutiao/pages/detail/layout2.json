@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "",
+  "usingComponents": {
+    "yinliu": "/pages/detail/yinliu",
+    "alert": "/components/alert"
+  }
+}

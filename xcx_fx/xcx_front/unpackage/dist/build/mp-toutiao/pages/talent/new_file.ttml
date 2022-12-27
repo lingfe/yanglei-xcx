@@ -1,0 +1,1 @@
+<view><image class="bg-img" mode="widthFix" src="../../static/images/ruzhuhb21.jpg" data-event-opts="{{[['tap',[['creator',['$event']]]]]}}" bindtap="__e"></image></view>

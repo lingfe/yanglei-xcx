@@ -1,0 +1,171 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+					 "navigationStyle": "custom",
+					"transparentTitle":"always"
+			
+				}
+			
+		},
+		{
+			"path": "pages/talent/index",
+			"style": {
+				"navigationBarTitleText": "创作者",
+					 "navigationStyle": "custom",
+					"transparentTitle":"always"
+					
+			
+				}
+		
+			
+		},
+		{
+			"path": "pages/talent/detail",
+			"style": {
+				"navigationBarTitleText": "创作者主页",
+				
+				 "navigationStyle": "custom",
+				"transparentTitle":"always"
+				
+				
+			}
+		},
+		{
+			"path": "pages/talent/new_file",
+			"style": {
+				"navigationBarTitleText": "创作者入驻",
+				"navigationBarTextStyle": "white",
+			     "navigationStyle": "custom",
+				"transparentTitle":"always"
+			}
+		},
+		{
+			"path": "pages/cate/index",
+			"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh":false,
+					"navigationStyle": "default"
+				}
+		},
+		{
+			"path": "pages/search/index",
+			"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh":false,
+					"navigationStyle": "default"
+				}
+		},
+		{
+			"path": "pages/search/result",
+			"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh":false,
+					"navigationStyle": "default"
+				}
+		},
+		{
+			"path": "pages/list/index",
+			"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh":false,
+					"navigationStyle": "default"
+				}
+		},
+		{
+			"path": "pages/detail/index",
+			"style": {
+				
+				 "navigationStyle": "custom",
+				"transparentTitle":"always"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				
+				 "navigationStyle": "custom",
+				"transparentTitle":"always"
+			}
+		},
+		{
+			"path": "pages/user/collect",
+			"style": {
+					"navigationBarTitleText": "我的收藏",
+					"enablePullDownRefresh":false
+					
+				}
+		}
+        ,{
+            "path" : "pages/index/webview"
+			
+        },
+		{
+			"path":"pages/index/richtext",
+			"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh":false,
+					"navigationStyle": "default"
+				}
+		},
+		{
+			"path": "pages/detail/layout2",
+			"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh":false,
+					"navigationStyle": "default"
+				}
+		},
+		{
+			"path":"pages/user/richtext",
+			"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh":false,
+					"navigationStyle": "default"
+				}
+		},
+		{
+			"path":"pages/user/setting",
+			"style": {
+					"navigationBarTitleText": "设置",
+					"enablePullDownRefresh":false,
+					"navigationStyle": "default"
+				}
+		}
+        
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "首页",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+	  "color": "#666666",
+	  "selectedColor": "#000000",
+	  "borderStyle": "black",
+	  "backgroundColor": "#ffffff",
+	  "list": [{
+	      "pagePath": "pages/index/index",
+	      "iconPath": "static/images/home.png",
+	      "selectedIconPath": "static/images/home-active.png",
+	      "text": "首页"
+	    }
+		, {
+	      "pagePath": "pages/talent/index",
+	      "iconPath": "static/images/expert.png",
+	      "selectedIconPath": "static/images/expert-active.png",
+	      "text": "创作者"
+	    }
+		, {
+	      "pagePath": "pages/user/index",
+	      "iconPath": "static/images/user.png",
+	      "selectedIconPath": "static/images/user-active.png",
+	      "text": "我的"
+	    }
+	  ]
+	}
+}

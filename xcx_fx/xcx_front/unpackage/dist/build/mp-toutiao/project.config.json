@@ -1,0 +1,11 @@
+{
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": false,
+    "minified": true,
+    "newFeature": true
+  },
+  "appid": "tt91c5e7780efb0cb701",
+  "projectname": "热图君"
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "default",
+  "transparentTitle": "always",
+  "usingComponents": {
+    "block-comp": "/pages/index/block"
+  }
+}

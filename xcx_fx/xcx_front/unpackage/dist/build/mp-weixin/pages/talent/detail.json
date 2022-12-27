@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "创作者主页",
+  "navigationStyle": "custom",
+  "transparentTitle": "always",
+  "usingComponents": {
+    "alert": "/components/alert"
+  }
+}
